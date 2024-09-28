@@ -54,12 +54,17 @@ Run the script with various command-line arguments:
    python weight_tracker.py 71.2 -d 2023-05-01
    ```
 
-3. Generate a graph for the last 6 months:
+3. Generate a graph for the last 6 months and save 6 months:
    ```
    python weight_tracker.py -r 6m -g
    ```
 
-4. Import historical data and generate a graph:
+4. Generate a graph for all weights since 2024-08-14 and save that as the default range:
+   ```
+   python weight_tracker.py -f 2024-08-14 -s -g
+   ```
+
+5. Import historical data and generate a graph:
    ```
    python weight_tracker.py --import-history
    python weight_tracker.py -g
