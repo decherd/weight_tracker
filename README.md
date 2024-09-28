@@ -39,7 +39,7 @@ Run the script with various command-line arguments:
 - `-r, --range`: Graph range (1m, 6m, 1y, or all)
 - `-f, --from-date`: Start date for graph (YYYY-MM-DD)
 - `-s, --set-default`: Set the current range as default
-- `--import-history`: Import historical data from weights.py
+- `--import-history`: Import historical data from weights.py (will overwrite any duplicate dates)
 - `-g, --graph-only`: Generate graph without logging weight
 
 ### Examples:
@@ -64,7 +64,7 @@ Run the script with various command-line arguments:
    python weight_tracker.py -f 2024-08-14 -s -g
    ```
 
-5. Import historical data and generate a graph:
+5. Import historical data and generate a graph: (Note: put all historical weights in the `prev_weights` dictionary in the `weights.py` file with date as the key (YYYY-MM-DD) and weight as the value)
    ```
    python weight_tracker.py --import-history
    python weight_tracker.py -g
