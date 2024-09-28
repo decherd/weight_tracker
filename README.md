@@ -11,6 +11,9 @@ A simple command-line weight tracking application that allows users to log their
 - Import historical weight data
 - Save graphs as PNG files in the Downloads folder
 
+## Example Graph
+![Weight Progress Over Time](./weight_progress.png)
+
 ## Installation
 
 1. Clone this repository:
